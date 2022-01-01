@@ -1,3 +1,12 @@
+.text-area{
+    -fx-font-family: "Comic Sans MS";
+}
+#col{
+    -fx-font-family: "Comic Sans MS";
+}
+#col1{
+    -fx-font-family: "Comic Sans MS";
+}
 #but{
     -fx-background-color: bisque;
     -fx-text-fill: #19191b;
@@ -15,4 +24,15 @@
     -fx-background-radius: 5;
     -fx-border-style: hidden none solid none;
     -fx-border-width: 2;
+}
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color:grey;
+    -fx-border-radius:3px;
+}
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+.check-box:selected .box {
+    -fx-background-color: #28a3f4;
 }

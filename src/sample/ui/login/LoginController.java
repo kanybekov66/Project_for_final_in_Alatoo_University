@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.TextField;
 import sample.classes.User;
 import sample.database.DatabaseHandler;
+import sample.ui.addbook.AddBookController;
 
 
 import java.io.IOException;
@@ -73,7 +74,7 @@ public class LoginController implements Initializable {
                     }
                     else if (DBtype.equals("admin")){
                         User.setUsername(DBusername);
-                        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../adminmain/adminmain.fxml")));//TODO
+                        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../adminmain/adminmain.fxml")));
                         Scene scene = new Scene(root);
                         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                         appStage.setTitle("Library Information System - Admin");
@@ -90,7 +91,7 @@ public class LoginController implements Initializable {
             alert.setContentText("Username or Password is incorrect");
             alert.showAndWait();
         }catch (SQLException ex){
-            //TODO
+            Logger.getLogger(AddBookController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

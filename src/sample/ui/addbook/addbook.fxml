@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="570.0" prefWidth="420.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.addbook.AddBookController">
+    <style>-fx-background-color: bisque;</style>
+    <Pane layoutX="35.0" layoutY="30.0" prefHeight="510.0" prefWidth="350.0">
+        <effect>
+            <DropShadow />
+        </effect>
+        <style>-fx-background-color: #aca;</style>
+        <Label layoutX="135.0" layoutY="20.0" text="Add book" textFill="#0058ff">
+            <font>
+                <Font name="Comic Sans MS" size="18.0" />
+            </font>
+        </Label>
+        <VBox layoutX="50.0" layoutY="70.0" prefHeight="165.0" prefWidth="250.0" spacing="5.0">
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="250.0" text="ISBN" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="bookISBN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <padding>
+                    <Insets bottom="1.0" />
+                </padding>
+            </TextField>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="Title" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="bookName" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <padding>
+                    <Insets bottom="1.0" />
+                </padding>
+            </TextField>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="Author" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="bookAuthor" alignment="CENTER" layoutX="10.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <padding>
+                    <Insets bottom="1.0" />
+                </padding>
+            </TextField>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="Publisher" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="bookPublisher" alignment="CENTER" layoutX="10.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <padding>
+                    <Insets bottom="1.0" />
+                </padding>
+            </TextField>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="242.0" prefHeight="25.0" prefWidth="250.0" text="Type" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <ChoiceBox id="choce" fx:id="bookType" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0" />
+        </VBox>
+        <HBox layoutY="439.0" prefHeight="50.0" prefWidth="350.0" spacing="10.0">
+            <Button id="but" fx:id="addButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addBook" prefHeight="40.0" prefWidth="160.0" text="Add Book">
+                <font>
+                    <Font name="Comic Sans MS" size="20.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="10.0" top="5.0" />
+                </HBox.margin>
+            </Button>
+            <Button id="but" fx:id="cancelButton" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancel" prefHeight="40.0" prefWidth="160.0" text="Cancel">
+                <font>
+                    <Font name="Comic Sans MS" size="20.0" />
+                </font>
+                <HBox.margin>
+                    <Insets right="10.0" top="5.0" />
+                </HBox.margin>
+            </Button>
+        </HBox>
+    </Pane>
+</AnchorPane>

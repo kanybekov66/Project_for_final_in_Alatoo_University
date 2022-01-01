@@ -12,14 +12,13 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import sample.database.DatabaseHandler;
-
+import sample.ui.addbook.AddBookController;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Objects;
-import java.util.ResourceBundle;
+import java.sql.*;
+import java.util.*;
+import java.util.logging.*;
 
 public class RegisterController implements Initializable {
     @FXML
@@ -81,7 +80,7 @@ public class RegisterController implements Initializable {
                 }
             }
         }catch (SQLException ex){
-            //TODO
+            Logger.getLogger(AddBookController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         String q = "INSERT INTO users(username, password) VALUES(" +

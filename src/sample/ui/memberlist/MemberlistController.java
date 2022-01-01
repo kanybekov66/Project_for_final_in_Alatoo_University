@@ -13,6 +13,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import sample.classes.Member;
 import sample.database.DatabaseHandler;
+import sample.ui.addbook.AddBookController;
 
 import java.net.URL;
 import java.sql.ResultSet;
@@ -56,7 +57,7 @@ public class MemberlistController implements Initializable {
                 list.add(new Member(username, password, type));
             }
         }catch (SQLException ex){
-            //TODO
+            Logger.getLogger(AddBookController.class.getName()).log(Level.SEVERE, null, ex);
         }
         TableView.getItems().setAll(list);
     }
