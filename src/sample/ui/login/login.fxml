@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="420.0" style="-fx-background-color: bisque;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.login.LoginController">
+    <Pane layoutX="35.0" layoutY="30.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #aca;">
+        <effect>
+            <DropShadow />
+        </effect>
+        <Label layoutX="147.0" layoutY="20.0" text="Sign in" textFill="#0058ff">
+            <font>
+                <Font name="Comic Sans MS" size="18.0" />
+            </font>
+        </Label>
+        <VBox layoutX="50.0" layoutY="130.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="Username" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <TextField fx:id="username" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <padding>
+                    <Insets bottom="1.0" />
+                </padding>
+            </TextField>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="250.0" text="Password" textAlignment="CENTER">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="password" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="250.0">
+                <font>
+                    <Font name="Comic Sans MS" size="16.0" />
+                </font>
+                <padding>
+                    <Insets bottom="3.0" />
+                </padding>
+            </PasswordField>
+        </VBox>
+        <Label layoutX="57.0" layoutY="338.0" text="Don't have account? ">
+            <font>
+                <Font name="Comic Sans MS" size="12.0" />
+            </font>
+        </Label>
+        <Hyperlink layoutX="175.0" layoutY="335.0" onAction="#goToRegisterPage" text="register new one">
+            <font>
+                <Font name="Comic Sans MS" size="12.0" />
+            </font>
+        </Hyperlink>
+        <Button id="but" alignment="CENTER" contentDisplay="BOTTOM" layoutX="100.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#tryLogin" prefHeight="25.0" prefWidth="150.0" text="Login" textAlignment="CENTER" textFill="#19191b" wrapText="true">
+            <font>
+                <Font name="Comic Sans MS" size="16.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+            <padding>
+                <Insets bottom="2.0" />
+            </padding>
+        </Button>
+    </Pane>
+</AnchorPane>
