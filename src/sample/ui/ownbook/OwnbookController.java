@@ -54,7 +54,7 @@ public class OwnbookController extends CatalogueController implements Initializa
     }
 
     private void loadData() {
-        String qu = "SELECT * FROM book WHERE title='" + bookName.getText() + "'";
+        String qu = "SELECT * FROM book WHERE title like '%" + bookName.getText() + "%'";
         ResultSet rs = handler.execQuery(qu);
         try{
             while (rs.next()){

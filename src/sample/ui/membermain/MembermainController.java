@@ -35,7 +35,7 @@ public class MembermainController implements Initializable {
     }
 
     public void goToSearch(ActionEvent actionEvent) {
-        loadWindow("../ownbook/ownbook.fxml", "Alatoo Library Information System - Search");//TODO
+        loadWindow("../ownbook/ownbook.fxml", "Alatoo Library Information System - Search");
     }
 
     public void goToCatalogue(ActionEvent actionEvent) {
