@@ -38,7 +38,7 @@ public class LoginController implements Initializable {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../register/register.fxml")));
         Scene scene = new Scene(root);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        appStage.setTitle("Library Information System - Sign Up");
+        appStage.setTitle("Alatoo Library Information System - Sign Up");
         appStage.setScene(scene);
         appStage.show();
         appStage.setResizable(false);
@@ -67,7 +67,7 @@ public class LoginController implements Initializable {
                         Scene scene = new Scene(root);
                         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                         appStage.setScene(scene);
-                        appStage.setTitle("Library Information System - Member");
+                        appStage.setTitle("Alatoo Library Information System - Member");
                         appStage.show();
                         appStage.setResizable(false);
                         return;
@@ -77,7 +77,7 @@ public class LoginController implements Initializable {
                         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../adminmain/adminmain.fxml")));
                         Scene scene = new Scene(root);
                         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                        appStage.setTitle("Library Information System - Admin");
+                        appStage.setTitle("Alatoo Library Information System - Admin");
                         appStage.setScene(scene);
                         appStage.show();
                         appStage.setResizable(false);

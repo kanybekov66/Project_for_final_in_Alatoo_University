@@ -40,7 +40,7 @@ public class RegisterController implements Initializable {
         Scene scene = new Scene(root, 420, 460);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         appStage.setScene(scene);
-        appStage.setTitle("Library Information System - Sign in");
+        appStage.setTitle("Alatoo Library Information System - Sign in");
         appStage.show();
         appStage.setResizable(false);
     }

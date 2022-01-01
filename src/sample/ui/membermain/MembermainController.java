@@ -31,15 +31,15 @@ public class MembermainController implements Initializable {
     }
 
     public void goToCurrent(ActionEvent actionEvent) {
-        loadWindow("../currentbooks/currentbooks.fxml", "Alatoo library Information System - Add Book");//TODO
+        loadWindow("../currentbooks/currentbooks.fxml", "Alatoo Library Information System - Current Books");//TODO
     }
 
     public void goToSearch(ActionEvent actionEvent) {
-        loadWindow("../ownbook/ownbook.fxml", "Alatoo library Information System - Search");//TODO
+        loadWindow("../ownbook/ownbook.fxml", "Alatoo Library Information System - Search");//TODO
     }
 
     public void goToCatalogue(ActionEvent actionEvent) {
-        loadWindow("../catalogue/catalogue.fxml","Alatoo library Information System - Catalogue");//TODO
+        loadWindow("../catalogue/catalogue.fxml","Alatoo Library Information System - Catalogue");
     }
 
     public void goToLogin(ActionEvent actionEvent) throws IOException {

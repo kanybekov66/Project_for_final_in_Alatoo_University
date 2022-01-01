@@ -24,15 +24,15 @@ public class AdminmainController implements Initializable {
     public Label username;
 
     public void goToCatalogue(ActionEvent actionEvent) {
-        loadWindow("../catalogue/catalogue.fxml", "Library Information System - Catalogue");//TODO
+        loadWindow("../catalogue/catalogue.fxml", "Alatoo Library Information System - Catalogue");
     }
 
     public void goToAddBook(ActionEvent actionEvent) {
-        loadWindow("../addbook/addbook.fxml", "Library Information System - Adding Book");//TODO
+        loadWindow("../addbook/addbook.fxml", "Alatoo Library Information System - Adding Book");
     }
 
     public void goToMembers(ActionEvent actionEvent) {
-        loadWindow("../memberlist/memberlist.fxml", "Library Information System - Member List");//TODO
+        loadWindow("../memberlist/memberlist.fxml", "Alatoo Library Information System - Member List");
     }
 
     public void goToLogin(ActionEvent actionEvent) throws IOException {
