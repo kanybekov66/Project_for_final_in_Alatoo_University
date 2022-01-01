@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="420.0" style="-fx-background-color: bisque;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ui.adminmain.AdminmainController">
+    <Pane layoutX="35.0" layoutY="30.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #aca;">
+        <effect>
+            <DropShadow/>
+        </effect>
+        <Label fx:id="username" layoutX="153.0" layoutY="27.0" text="Hello" textFill="#0058ff">
+            <font>
+                <Font name="Comic Sans MS" size="18.0"/>
+            </font>
+        </Label>
+        <VBox layoutX="50.0" layoutY="72.0" prefHeight="350.0" prefWidth="250.0" spacing="30.0">
+            <children>
+                <Button id="but" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" onAction="#goToCatalogue" prefHeight="50.0" prefWidth="250.0"
+                        text="Catalogue">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Button>
+                <Button id="but" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" onAction="#goToAddBook" prefHeight="50.0" prefWidth="250.0"
+                        text="Add Book">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Button>
+                <Button id="but" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" onAction="#goToMembers" prefHeight="50.0" prefWidth="250.0"
+                        text="Members">
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0"/>
+                    </font>
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Button>
+                <Button id="but" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                        mnemonicParsing="false" onAction="#goToLogin" prefHeight="50.0" prefWidth="250.0" text="Logout">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font name="Comic Sans MS" size="18.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow/>
+                    </effect>
+                </Button>
+            </children>
+        </VBox>
+    </Pane>
+</AnchorPane>

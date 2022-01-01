@@ -61,7 +61,7 @@ public class LoginController implements Initializable {
                 if (DBusername.equalsIgnoreCase(username.getText()) && DBpassword.equals(password.getText())){
                     if(DBtype.equals("member")){
                         User.setUsername(DBusername);
-                        Parent root = FXMLLoader.load(getClass().getResource("../membermain/membermain.fxml"));//TODO
+                        Parent root = FXMLLoader.load(getClass().getResource("../membermain/membermain.fxml"));
                         Scene scene = new Scene(root);
                         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                         appStage.setScene(scene);
