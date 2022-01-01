@@ -18,9 +18,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Objects;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class RegisterController implements Initializable {
     @FXML
@@ -38,7 +37,7 @@ public class RegisterController implements Initializable {
     }
 
     public void goToLoginPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../login/login.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../login/login.fxml")));
         Scene scene = new Scene(root, 420, 460);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         appStage.setScene(scene);

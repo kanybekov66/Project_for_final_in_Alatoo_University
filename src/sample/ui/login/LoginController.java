@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,7 +34,7 @@ public class LoginController implements Initializable {
     DatabaseHandler handler;
 
     public void goToRegisterPage(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../register/register.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../register/register.fxml")));
         Scene scene = new Scene(root);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         appStage.setTitle("Library Information System - Sign Up");
@@ -61,7 +62,7 @@ public class LoginController implements Initializable {
                 if (DBusername.equalsIgnoreCase(username.getText()) && DBpassword.equals(password.getText())){
                     if(DBtype.equals("member")){
                         User.setUsername(DBusername);
-                        Parent root = FXMLLoader.load(getClass().getResource("../membermain/membermain.fxml"));
+                        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../membermain/membermain.fxml")));
                         Scene scene = new Scene(root);
                         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                         appStage.setScene(scene);
@@ -72,7 +73,7 @@ public class LoginController implements Initializable {
                     }
                     else if (DBtype.equals("admin")){
                         User.setUsername(DBusername);
-                        Parent root = FXMLLoader.load(getClass().getResource("../adminmain/adminmain.fxml"));//TODO
+                        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("../adminmain/adminmain.fxml")));//TODO
                         Scene scene = new Scene(root);
                         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                         appStage.setTitle("Library Information System - Admin");
